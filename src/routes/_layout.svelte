@@ -1,7 +1,4 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-
-	export let segment;
 </script>
 
 <style>
@@ -12,10 +9,13 @@
 		padding: 2em;
 		margin: 0 auto;
 		box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
 	}
 </style>
 
-<Nav {segment}/>
+<svelte:head>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface|Poppins:300&display=swap" rel="stylesheet">
+</svelte:head>
 
 <main>
 	<slot></slot>
