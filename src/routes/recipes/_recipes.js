@@ -18,16 +18,47 @@ const recipes = [
             time: "20-30 Minuten",
             style: "vegetarisch, lecker"
         },
-        ingredients: {
-            'Mehl': "500g",
-            "Hefe": "40g",
-            "Zwetschgen": "1kg",
-        },
+        ingredients: [
+            {
+                title: "Für den Boden",
+                parts: [{
+                    name: "Mehl",
+                    value: "500g"
+                },{
+                    name: "Hefe",
+                    value: "40g"
+                }]
+            },
+            {
+                title: "Für den Belag",
+                parts: [{
+                    name: "Zwetschgen",
+                    value: "1kg"
+                }]
+            }
+        ],
         steps: [
             {
                 image: 'successkid.jpg',
                 name: "1. Zwetschgen entkernen",
                 text: "Dabei beachten, entlang des Boppes zu schneiden!"
+            },
+            {
+                image: 'successkid.jpg',
+                name: "2. Teig zubereiten",
+                text: "Zutaten mischen"
+            },
+            {
+                image: 'successkid.jpg',
+                name: "3. Teig ruhen lassen",
+            },
+            {
+                image: 'successkid.jpg',
+                name: "4. Teig auswalzen",
+            },
+            {
+                image: 'successkid.jpg',
+                name: "5. Teig belegen",
             },
             {
                 image: 'recipes/zwetschgenkuchen/6_backen.jpg',

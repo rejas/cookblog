@@ -22,14 +22,24 @@
 			{@html recipe.summary}
 		</div>
 	</div>
-	<div class="recipe__steps">
-		{#each recipe.steps as step}
-			<div class="recipe_step">
-				<div class="step_image"><img src="{step.image}" alt=""/></div>
-				<div class="step_name">{step.name}</div>
-				<div class="step_text">{@html step.text}</div>
-			</div>
-		{/each}
+	<div class="recipe__details">
+		<div class="recipe__ingredients">
+			{#each recipe.ingredients as ingredient}
+				<h3 class="ingredients__title">{ingredient.title}</h3>
+				{#each ingredient.parts as part}
+					<p>{part.name}: {part.value}</p>
+				{/each}
+			{/each}
+		</div>
+		<div class="recipe__steps">
+			{#each recipe.steps as step}
+				<div class="recipe__step">
+					<div class="step__image"><img src="{step.image}" alt=""/></div>
+					<h3 class="step__name">{step.name}</h3>
+					<div class="step__text">{@html step.text}</div>
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>
 
@@ -41,6 +51,7 @@
 
 	.recipe__overview {
 		display: grid;
+		grid-gap: 1rem;
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "title title"
 							 "image image"
@@ -60,25 +71,43 @@
 
 	.recipe__stats {
 		grid-area: stats;
-		list-style: none;
-		text-indent: -35px;
 	}
 
 	.recipe__statline {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		column-gap: 10px;
+		column-gap: 1rem;
+	}
+
+	.recipe__details {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: 1fr 3fr;
+		grid-template-areas: "ingredients steps";
+	}
+
+	.recipe__ingredients {
+		grid-area: ingredients;
+		background-color: darkgrey;
+		padding: 1rem;
+	}
+
+	.ingredients__title {
+		font-weight: bold;
 	}
 
 	.recipe__steps {
+		grid-area: steps;
 		display: grid;
 		grid-gap: 1rem;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		grid-template-rows: auto;
 	}
 
-	img {
-		max-width: 100%;
+	.step__name {
+		background-color: darkgrey;
+		padding: 0.25rem;
+		margin-bottom: 0.5rem;
 	}
 </style>
