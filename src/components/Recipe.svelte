@@ -53,6 +53,7 @@
 		display: grid;
 		grid-gap: 1rem;
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr auto;
 		grid-template-areas: "title title"
 							 "image image"
 							 "stats descr";
@@ -67,10 +68,12 @@
 
 	.recipe__image {
 		grid-area: image;
+		overflow: hidden;
 	}
 
 	.recipe__stats {
 		grid-area: stats;
+		padding: 1rem;
 	}
 
 	.recipe__statline {
@@ -109,5 +112,31 @@
 		background-color: darkgrey;
 		padding: 0.25rem;
 		margin-bottom: 0.5rem;
+	}
+
+	@media print {
+		@page {
+			size: A4 landscape;
+			max-height: 100%;
+			max-width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.recipe__overview {
+			page-break-after: always;
+			height: 100vh;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.recipe__details {
+			page-break-before: always;
+			height: 100vh;
+		}
 	}
 </style>

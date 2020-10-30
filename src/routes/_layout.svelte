@@ -10,6 +10,13 @@
 		margin: 0 auto;
 		font-family: 'Poppins', sans-serif;
 	}
+	@media print {
+		main {
+			max-width: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
 </style>
 
 <svelte:head>
