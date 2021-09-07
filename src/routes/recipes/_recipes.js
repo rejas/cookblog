@@ -3,8 +3,8 @@
 // avoid unnecessary dependencies in the starter template, and in the
 // service of obviousness, we're just going to leave it here.
 
-// This file is called `_posts.js` rather than `posts.js`, because
-// we don't want to create an `/blog/posts` route — the leading
+// This file is called `_recipes.js` rather than `recipes.js`, because
+// we don't want to create an `/blog/recipes` route — the leading
 // underscore tells Sapper not to do that.
 
 const recipes = [
@@ -39,25 +39,25 @@ const recipes = [
         ],
         steps: [
             {
-                image: 'successkid.jpg',
+                image: 'recipes/placeholder.jpg',
                 name: "1. Zwetschgen entkernen",
                 text: "Dabei beachten, entlang des Boppes zu schneiden!"
             },
             {
-                image: 'successkid.jpg',
+                image: 'recipes/placeholder.jpg',
                 name: "2. Teig zubereiten",
                 text: "Zutaten mischen"
             },
             {
-                image: 'successkid.jpg',
+                image: 'recipes/placeholder.jpg',
                 name: "3. Teig ruhen lassen",
             },
             {
-                image: 'successkid.jpg',
+                image: 'recipes/placeholder.jpg',
                 name: "4. Teig auswalzen",
             },
             {
-                image: 'successkid.jpg',
+                image: 'recipes/placeholder.jpg',
                 name: "5. Teig belegen",
             },
             {
@@ -70,7 +70,7 @@ const recipes = [
     {
         title: 'Kartoffelsuppe',
         slug: 'kartoffelsuppe',
-        image: 'successkid.jpg',
+        image: 'recipes/placeholder.jpg',
         summary: 'First, you have to know what <a href=\'https://svelte.dev\'>Svelte</a> is. Svelte is a UI framework with a <strong>bold</strong> new idea',
         stats: {
             level: 1,
@@ -79,12 +79,12 @@ const recipes = [
         },
         steps: [
             {
-                image: 'successkid.jpg',
+                image: 'recipes/placeholder.jpg',
                 name: "1. Kartoffeln kochen",
                 text: "lorem ipsum"
             },
             {
-                image: 'successkid.jpg',
+                image: 'recipes/placeholder.jpg',
                 name: "2. Kartoffeln pürieren",
                 text: "lorem ipsum"
             }
