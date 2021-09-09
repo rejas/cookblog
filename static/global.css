@@ -1,0 +1,33 @@
+body {
+    background-color: #fdf9e0;
+}
+
+main {
+    position: relative;
+    max-width: 56em;
+    padding: 1rem;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media print {
+    main {
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+}

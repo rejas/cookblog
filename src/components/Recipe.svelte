@@ -57,13 +57,11 @@
 		grid-template-areas: "title title"
 							 "image image"
 							 "stats descr";
+        margin-bottom: 2rem;
 	}
 
 	.recipe__title {
-		font-family: 'Abril Fatface', cursive;
 		grid-area: title;
-		text-align: center;
-		font-size: 2rem;
 	}
 
 	.recipe__image {
@@ -73,7 +71,7 @@
 
 	.recipe__stats {
 		grid-area: stats;
-		padding: 1rem;
+		padding: 0 1rem;
 	}
 
 	.recipe__statline {
@@ -92,7 +90,7 @@
 
 	.recipe__ingredients {
 		grid-area: ingredients;
-		background-color: darkgrey;
+		background-color: rgb(228, 228, 228);
 		padding: 1rem;
 	}
 
@@ -109,7 +107,7 @@
 	}
 
 	.step__name {
-		background-color: darkgrey;
+		background-color: rgb(248, 248, 248);
 		padding: 0.25rem;
 		margin-bottom: 0.5rem;
 	}
@@ -126,6 +124,7 @@
 		.recipe__overview {
 			page-break-after: always;
 			height: 100vh;
+			margin-bottom: 0;
 		}
 
 		img {

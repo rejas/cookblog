@@ -12,7 +12,7 @@ const recipes = [
         title: 'Zwetschgenkuchen',
         slug: 'zwetschgenkuchen',
         image: 'recipes/zwetschgenkuchen/0_title.jpg',
-        summary: 'Wie bei Mama zuhause',
+        summary: 'Wie bei Mama zuhause. Am besten zusammen mit Kartoffelsuppe genießen.',
         stats: {
             level: 1,
             time: "20-30 Minuten",
@@ -41,7 +41,7 @@ const recipes = [
             {
                 image: 'recipes/placeholder.jpg',
                 name: "1. Zwetschgen entkernen",
-                text: "Dabei beachten, entlang des Boppes zu schneiden!"
+                text: "Dabei beachten: entlang des Boppes schneiden!"
             },
             {
                 image: 'recipes/placeholder.jpg',
