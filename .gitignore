@@ -106,3 +106,4 @@ dist
 # Sapper files
 __sapper__/build/
 __sapper__/dev/
+__sapper__/export/

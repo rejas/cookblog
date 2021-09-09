@@ -11,6 +11,12 @@ main {
 }
 
 @media print {
+    html,
+    body {
+        height:100%;
+        margin:0;
+        padding:0;
+    }
     main {
         max-width: none;
         padding: 0;
